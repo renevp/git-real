@@ -1,0 +1,41 @@
+# Difference between staging files
+git diff --staged 
+
+# Reset file to last commit
+git reset HEAD <file>
+
+# Discard changes
+git checkout -- <file>
+
+# Reset into staging (Undo last commit, put changes into staging)
+git reset --soft HEAD^
+
+or
+
+# Change the last commit
+git commit --amend -m "New commit message"
+
+# Undo last commit and all changes
+git reset --hard HEAD^
+
+# Undo last 2 commits and all changes
+git reset --hard HEAD^^
+
+# Check origin repository url
+git remote -v
+
+# Add origin url
+git remote add origin https://github.com/renevp/stardust.git
+
+# Add a new remote url
+git remote add <name> <address>
+
+# Remove remotes
+git remote rm <name>
+
+# Push to remotes
+git push -u <name> <branch>
+
+# Heroku remote
+heroku create # After install heroku gem
+git push heroku master
