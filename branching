@@ -1,0 +1,35 @@
+# List all remote branches
+git branch -r
+
+# Start working with a branch
+git checkout <branch name>
+
+# Show remote branches detail
+git remote show origin
+
+# Remove remote branch
+git push origin :<branch name>
+
+# Remove local branch
+git branch -d <branch name>
+
+git branch -D <branch name>
+
+# To clean up deleted remote branches
+git remote prune origin
+
+# Heroku deploys only master branch (local:remote)
+git push heroku-staging staging:master
+
+# List all tags
+git tag
+
+# Check out code at commit
+git checkout <tag name>
+
+
+# To add a new tag
+git tag -a <tag name> -m "Description message"
+
+# To push new tags
+git push --tags
