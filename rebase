@@ -1,0 +1,21 @@
+git rebase
+
+1. Move all changes to master which are not in origin/master to a temporary area. 
+2. Run all origin/master commits.
+3. Run all commits in the temporary area, one at a time.
+
+# Local branch rebase
+git checkout <branch name>
+
+git rebase master
+
+git checkout master
+
+git merge <branch name>
+
+# What about conflicts
+git fetch
+
+git rebase
+
+git rebase --continue
