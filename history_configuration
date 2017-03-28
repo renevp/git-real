@@ -1,0 +1,60 @@
+git log --oneline -p
+
+git log --oneline --stat
+
+git log --oneline --graph
+
+# Date ranges
+git log --until=1.minute.ago
+
+git log --since=1.day.ago
+
+git log --since=1.hour.ago
+
+git log --since=1.month.ago --until=2.weeks.ago
+
+git log --since=2000-01-01  --until=2012-12-21
+
+# Earlier commits
+git diff HEAD^
+
+git diff HEAD^^
+
+git diff HEAD~5
+
+git diff HEAD^..HEAD 
+
+git diff <sha1>..<sha2>
+
+git diff master <branch name>
+
+git diff --since=2000-01-01  --until=2012-12-21
+
+# Blame
+git blame <filename> --date short
+
+# Excluding files
+.git/info/exclude
+.gitignore
+
+# Removing files
+git rm <filename>
+
+# Untracking files
+git rm --cached <filename>
+
+# Config
+git config --global user.name "Rene Vallenilla"
+
+git config --global user.email "rene@xmail.com"
+
+git config --global core.editor vi
+
+git config --list
+
+git config --global alias.st status
+
+
+
+
+
